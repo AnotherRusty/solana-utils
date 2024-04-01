@@ -5,8 +5,10 @@
     "dotenv": "^16.4.5"
   },
   "scripts": {
-    "tx": "ts-node index.ts",
-    "rand": "ts-node random.ts"
+    "decode": "ts-node decode.ts",
+    "wallet": "ts-node random.ts",
+    "raydium": "ts-node raydium.ts",
+    "pnl": "ts-node calcPNL.ts"
   },
   "devDependencies": {
     "@types/bs58": "^4.0.4",

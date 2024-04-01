@@ -9,6 +9,7 @@ const txHistory = async (address: string) => {
   let completedCount = 0;
   for (let i = 0; i < signatures.length; i++) {
     if (signatures[i]) {
+      // decoding part
       setTimeout(async () => {
         try {
           const decoded = await connection.getParsedTransaction(signatures[i]!, 'finalized')
@@ -21,6 +22,7 @@ const txHistory = async (address: string) => {
           }
         }
       }, i * 500)
+      // ----------------------------------------------------------------
     }
   }
 }
