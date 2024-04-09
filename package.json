@@ -8,7 +8,8 @@
     "decode": "ts-node decode.ts",
     "wallet": "ts-node random.ts",
     "raydium": "ts-node raydium.ts",
-    "pnl": "ts-node calcPNL.ts"
+    "pnl": "ts-node calcPNL.ts",
+    "transfer": "ts-node transfer.ts"
   },
   "devDependencies": {
     "@types/bs58": "^4.0.4",
